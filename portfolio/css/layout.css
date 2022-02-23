@@ -1,0 +1,85 @@
+@import '../css/reset.css';
+@import '../css/common.css';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+    font-family: 'nim';
+    src: url('../font/nim.woff2') format('woff2'); /* IE9 Compat Modes */
+    font-weight: 400
+}
+@font-face {
+    font-family: 'nim';
+    src: url('../font/nimBlack.woff2') format('woff2'); /* IE9 Compat Modes */
+    font-weight: 700
+}
+@font-face {
+    font-family: 'SF';
+    src: url('../font/SFR.woff2') format('woff2'); /* IE9 Compat Modes */
+    font-weight: 400
+}
+@font-face {
+    font-family: 'SF';
+    src: url('../font/SFM.woff2') format('woff2'); /* IE9 Compat Modes */
+    font-weight: 500
+}
+@font-face {
+    font-family: 'SF';
+    src: url('../font/SFB.woff2') format('woff2'); /* IE9 Compat Modes */
+    font-weight: 700
+}
+body{
+    color: #fff;
+    font-size: 16px;
+    /* font-family: 'nim', sans-serif; */
+    font-family: 'SF', sans-serif;
+    background: #000;
+}
+.cursor{
+    position: fixed;
+    width: 80px;height: 80px;
+    margin-top: -40px;
+    margin-left: -40px;
+    z-index: 10;
+    background: #fff;
+    border-radius: 50%;
+    mix-blend-mode: difference;
+    pointer-events: none;
+}
+
+/* .load{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;top: 0;
+    z-index: 100;
+}
+.loadbg01{
+    position: absolute;
+    left: 0;top: 0;
+    width: 100%;height: 100%;
+    background: url(../image/08fa35100998787.5f156e4b1b258.jpg) no-repeat center/cover;
+}
+.loadbg02{
+    position: absolute;
+    width: 100%;height: 100%;
+    left: 0;top: 0;
+    background: #008b46;
+    opacity: 1;
+} */
+/* .load .num{
+    font-size: 10vw;
+    color: #000;
+    position: absolute;
+    left: 50%;top: 50%;
+    transform: translate(-50%, -50%);
+} */
+header{
+    width: 100%;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+}
