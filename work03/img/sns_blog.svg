@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+    <defs>
+        <path id="e1tc5q2s1a" d="M0 0H1920V250H0z"/>
+        <path id="kemdn88ovc" d="M0 0H16V20.833H0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <path fill="#FFF" d="M0 0H1920V4985H0z" transform="translate(-1651 -4846)"/>
+            <g transform="translate(-1651 -4846) translate(0 4735)">
+                <mask id="tf5owuyucb" fill="#fff">
+                    <use xlink:href="#e1tc5q2s1a"/>
+                </mask>
+                <path fill="#17191C" d="M0 0L1920 0 1920 158.895 1920 250 0 250z" mask="url(#tf5owuyucb)"/>
+                <g mask="url(#tf5owuyucb)">
+                    <g>
+                        <path d="M0 0H30V29.762H0z" transform="translate(1651 111.111)"/>
+                        <g transform="translate(1651 111.111) translate(7 4.404)">
+                            <mask id="hron3did3d" fill="#fff">
+                                <use xlink:href="#kemdn88ovc"/>
+                            </mask>
+                            <path fill="#BEBEBE" fill-rule="nonzero" d="M8.586 5.25c4.077 0 7.236 2.893 7.236 7.42 0 4.526-3.159 7.42-7.236 7.42-1.944 0-3.51-.617-4.563-1.876v1.661H0V0h4.212v6.991C5.292 5.813 6.777 5.25 8.586 5.25zm-.729 11.41c2.106 0 3.699-1.5 3.699-3.99 0-2.491-1.593-3.991-3.699-3.991s-3.699 1.5-3.699 3.99c0 2.492 1.593 3.992 3.699 3.992z" mask="url(#hron3did3d)"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

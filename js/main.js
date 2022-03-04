@@ -34,7 +34,8 @@ $(function(){
             pin:true
         }
     })
-    intro01.to('.intro01 .txt01',{opacity:1})
+    intro01.to('.intro01 .scroll', {opacity:0})
+    .to('.intro01 .txt01',{opacity:1})
     .to('.intro01 .txt01',{opacity:0,yPercent:-100})
     .to('.intro01 .txt02',{opacity:1})
     .to('.intro01 .txt02',{opacity:0,yPercent:-100})
@@ -70,7 +71,7 @@ $(function(){
             trigger:".sc_site",
             start:'top top',
             end:'+=5000',
-            markers:true,
+            // markers:true,
             scrub:0.2,
             pin:true,
             // snap: {

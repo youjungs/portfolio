@@ -57,13 +57,13 @@ body{
     position: absolute;
     left: 0;top: 0;
     width: 100%;height: 100%;
-    background: url(../image/08fa35100998787.5f156e4b1b258.jpg) no-repeat center/cover;
+    background: url(../image/loadbg.jpg) no-repeat center/cover;
 }
 .loadbg02{
     position: absolute;
     width: 100%;height: 100%;
     left: 0;top: 0;
-    background: #008b46;
+    background: #000;
     opacity: 1;
 } */
 /* .load .num{
@@ -73,6 +73,7 @@ body{
     left: 50%;top: 50%;
     transform: translate(-50%, -50%);
 } */
+
 header{
     width: 100%;
     padding: 20px 30px;
@@ -82,4 +83,20 @@ header{
     justify-content: space-between;
     position: fixed;
     z-index: 1;
+}
+header .logo a{
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 600;
+}
+header .logo img{
+    height: 25px;
+}
+header .contact a{
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 600;
+}
+header .contact img{
+    height: 25px;
 }

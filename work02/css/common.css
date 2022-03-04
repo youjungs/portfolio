@@ -1,0 +1,22 @@
+.blind{
+    position: absolute;
+    width: 1px;height: 1px;
+    overflow: hidden;
+    margin-right: -1px;
+    clip: rect(0 0 0 0);
+}
+.all_bg {
+    position: fixed;
+    top: 0;left: 0;right: 0;bottom: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 2;
+    visibility: hidden;
+    opacity: 0;
+    backdrop-filter: blur(12px);
+    /* transition: all 0.5s; */
+    transition: opacity 0.5s, visibility 0.5s;
+}
+.all_bg.on{
+    opacity: 1;
+    visibility: visible;
+}

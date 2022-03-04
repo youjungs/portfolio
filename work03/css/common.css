@@ -1,0 +1,36 @@
+.blind{
+    position: absolute;
+    width: 1px;height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+#skip {position: relative;}
+#skip a{position: absolute; left : 0px; top:-35px; border : 1px solid #fff; color : #fff; background: #333; line-height: 30px;
+text-align: center; z-index: 100;}
+#skip a:active,
+#skip a:focus {top :0;}
+
+.title_wrap{
+    padding: 180px 0 60px;
+    margin: 0 20px;
+    text-align: center;
+    line-height: 1.5;
+}
+.cate{
+    color: #1655bf;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 15px;
+}
+.sc_title{
+    display: block;
+    color: #222;
+    font-weight: 700;
+    font-size: 44px;
+    margin-bottom: 20px;
+}
+.sc_desc{
+    font-weight: 500;
+}
