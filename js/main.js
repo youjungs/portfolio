@@ -84,7 +84,7 @@ $(function(){
         
     })
     site.addLabel('pj01')
-    .to('.group_site',{delay:1, xPercent:-25},'pj01')
+    .to('.group_site',{delay:0.5, xPercent:-25},'pj01')
     .addLabel('pj02')
     .to('.group_site',{xPercent:-50},'pj02')
     .addLabel('pj03')

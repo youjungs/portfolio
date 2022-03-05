@@ -33,6 +33,7 @@ body{
     /* font-family: 'nim', sans-serif; */
     font-family: 'SF', sans-serif;
     background: #000;
+    min-width: 1440px;
 }
 .cursor{
     position: fixed;
@@ -45,34 +46,6 @@ body{
     mix-blend-mode: difference;
     pointer-events: none;
 }
-
-/* .load{
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    left: 0;top: 0;
-    z-index: 100;
-}
-.loadbg01{
-    position: absolute;
-    left: 0;top: 0;
-    width: 100%;height: 100%;
-    background: url(../image/loadbg.jpg) no-repeat center/cover;
-}
-.loadbg02{
-    position: absolute;
-    width: 100%;height: 100%;
-    left: 0;top: 0;
-    background: #000;
-    opacity: 1;
-} */
-/* .load .num{
-    font-size: 10vw;
-    color: #000;
-    position: absolute;
-    left: 50%;top: 50%;
-    transform: translate(-50%, -50%);
-} */
 
 header{
     width: 100%;

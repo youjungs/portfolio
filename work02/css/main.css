@@ -2,6 +2,7 @@ main{
     position: relative;
     width: 100%;
     z-index: 1;
+    overflow: hidden;
     /* margin-bottom: 570px; */
 }
 .sc_vis{
@@ -100,7 +101,6 @@ main{
     position: relative;
     height: 100vh;
     z-index: 2;
-    overflow: hidden;
 }
 .sc_beauty .txt_wrap {
     width: 50vw;
@@ -213,6 +213,7 @@ main{
 .sc_new .desc {
     font-size: 14px;
     font-weight: 500;
+    line-height: 1.5;
 }
 .sc_new .btn_new {
     display: inline-block;

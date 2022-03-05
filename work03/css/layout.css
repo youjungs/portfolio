@@ -7,6 +7,7 @@ body{
     /* font-family: 'Poppins', sans-serif; */
     /* font-family: 'Roboto', sans-serif; */
     font-size: 16px;
+    background: #fff;
 }
 /* header */
 header{
@@ -247,11 +248,11 @@ header .lang_wrap .m_lang_wrap{
     justify-content: space-between;
 }
 .footer_bottom .ft_logo{
-    /* width: 15%; */
-    width: 112px;
+    width: 15%;
+    /* width: 112px; */
     height: 32px;
-    background: url(../img/hyundai-logo-wht.png) no-repeat 50%/cover;
-    margin-right: 50px;
+    background: url(../img/hyundai-logo-wht.png) no-repeat 0 0/112px;
+    /* margin-right: 50px; */
 }
 .footer_bottom .corp_area{
     width: 70%;
@@ -417,6 +418,7 @@ header .lang_wrap .m_lang_wrap{
     }
     .footer_bottom .ft_logo{
         width: 100%;
+        margin-bottom: 20px;
     }
     .footer_bottom .corp_area{
         width: 100%;
@@ -534,9 +536,6 @@ header .lang_wrap .m_lang_wrap{
         line-height: 40px;
         margin-top: 25px;
         font-size: 14px;
-    }
-    .footer_bottom .ft_logo{
-        background-size: 40%;
     }
     .footer_bottom .corp_area .info{
         font-size: 12px;
