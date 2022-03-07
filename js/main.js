@@ -1,18 +1,5 @@
 $(function(){
-
-    // gsap.to('.loadbg02',{opacity:0.5,duration:2},1)
-    // gsap.to('.load',{yPercent:-100,delay:3})
-
     
-    // $('.sc_intro').mousemove(function(e){
-
-    //     xVal = e.pageX - $('.sc_intro .bg').width()/2;
-    
-    //     gsap.to('.sc_intro .bg img',{
-    //       x:-xVal/30
-    //     })
-    //   })
-
     $('body').mousemove(function(e){
         xVal = e.clientX;
         yVal = e.clientY;
@@ -88,7 +75,8 @@ $(function(){
     .addLabel('pj02')
     .to('.group_site',{xPercent:-50},'pj02')
     .addLabel('pj03')
-    .to('.group_site',{xPercent:-75},'pj03')
+    // .to('.group_site',{xPercent:-75},'pj03')
+    .to('.group_site',{xPercent:-65},'pj03')
     // .addLabel('pj04')
     // .to('.group_site',{xPercent:-400},'pj04')
 
