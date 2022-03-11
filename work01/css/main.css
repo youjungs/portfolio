@@ -241,11 +241,6 @@
     font-weight: 500;
     line-height: 117px;
 }
-.sc_service .star{
-    background-image: url(../images/star.svg);
-    width: 21px;height: 20px;
-    display: inline-block;
-}
 .sc_service .sc_sub{
     color: #8b8075;
     font-size: 33px;
@@ -490,8 +485,6 @@
 .sc_infra .swiper-pagination-current {
     font-size: 10vw;
     margin-right: 15vw;
-}
-.sc_infra .swiper-pagination-total {
 }
 
 /* place */

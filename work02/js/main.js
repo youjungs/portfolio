@@ -118,22 +118,22 @@ $(function() {
   .to('.sc_new .btn_new',{'visibility':'visible',opacity:1,duration:1})
 
 
-  txtArr = [
-    'IG Filter Duo IG Filter Duo IG Filter Duo',
-    'Re-touch Re-touch Re-touch',
-    'Re-wind Re-wind Re-wind Re-wind',
-    'Re-mix Re-mix Re-mix Re-mix',
-    'Brilliant Kabuki Brush',
-    'Brilliant Powder Brush',
-    'Re-fine Re-fine Re-fine',
-  ];
-  $('.swiper-slide').hover(function(){
-    //data-swiper-slide-index="0"
-    $('.sc_best .hidetxt',{'visibility':'visible',opacity:1})
-    idx = $(this).data('swiper-slide-index');
+  // txtArr = [
+  //   'IG Filter Duo IG Filter Duo IG Filter Duo',
+  //   'Re-touch Re-touch Re-touch',
+  //   'Re-wind Re-wind Re-wind Re-wind',
+  //   'Re-mix Re-mix Re-mix Re-mix',
+  //   'Brilliant Kabuki Brush',
+  //   'Brilliant Powder Brush',
+  //   'Re-fine Re-fine Re-fine',
+  // ];
+  // $('.swiper-slide').hover(function(){
+  //   //data-swiper-slide-index="0"
+  //   $('.sc_best .hidetxt',{'visibility':'visible',opacity:1})
+  //   idx = $(this).data('swiper-slide-index');
 
-    $('.hidetxt span').text(txtArr[idx]);
-  })
+  //   $('.hidetxt span').text(txtArr[idx]);
+  // })
 
   var best = new Swiper(".bestseller", {
       slidesPerView: 3,
