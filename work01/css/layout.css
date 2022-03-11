@@ -1,0 +1,345 @@
+@import './reset.css';
+@import './common.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Noto+Sans+KR:wght@400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+@font-face {
+    font-family: 'noto';
+    src: url('../font/notoL.svg') format('svg'), url('../font/notoL.ttf') format('truetype'), url('../font/notoL.woff') format('woff'), url('../font/notoL.eot'), url('../font/notoL.eot') format('embedded-opentype'), url('../font/notoL.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'noto';
+    src: url('../font/notoR.svg') format('svg'), url('../font/notoR.ttf') format('truetype'), url('../font/notoR.woff') format('woff'), url('../font/notoR.eot'), url('../font/notoR.eot?#iefix') format('embedded-opentype'), url('../font/notoR.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'noto';
+    src: url('../font/notoM.svg') format('svg'), url('../font/notoM.ttf') format('truetype'), url('../font/notoM.woff') format('woff'), url('../font/notoM.eot'), url('../font/notoM.eot?#iefix') format('embedded-opentype'), url('../font/notoM.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'noto';
+    src: url('../font/notoB.svg#NotoKR-Bold') format('svg'), url('../font/notoB.ttf') format('truetype'), url('../font/notoB.woff') format('woff'), url('../font/notoB.eot'), url('../font/notoB.eot?#iefix') format('embedded-opentype'), url('../font/notoB.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* body */
+body{
+    font-size: 16px;
+    background: #000;
+    color: #fff;
+    font-family: 'Poppins','noto', sans-serif;
+}
+body.hidden{
+    overflow: hidden;
+}
+
+/* header */
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;left: 0;
+    z-index: 10;
+    transition: background 0.3s, transform 0.3s;
+}
+header.bg{
+    background: #000;
+}
+header.hide{
+    transform: translateY(-100%);
+}
+.hd_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 120px;
+    padding: 0 80px;
+    position: relative;
+    z-index: 100;
+}
+.hd_wrap .logo{
+    position: absolute;
+    top: 50%;left: 50%;
+    transform: translate(-50%, -50%);
+}
+.hd_left{
+    position: relative;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hd_left .menu_btn{
+    display: inline-block;
+    width: 95px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+}
+.hd_left .menu_btn .menubar{
+    width: 30px;height: 14px;
+    display: inline-block;
+    padding-right: 10px;
+}
+.hd_left .menu_btn .text{
+    font-weight: 500;
+    color: #fff;
+}
+.menubar .bar{
+    width: 30px;
+    height: 2px;
+    display: block;
+    background: #8b8075;
+    margin-bottom: 4px;
+    box-sizing: border-box;
+}
+.hd_left .menu_btn:hover .bar{
+    background: rgba(255, 255, 255, 0.7);
+}
+.menubar .bar:last-child{
+    margin-bottom: 0;
+}
+
+.hd_left .select_wrap{
+    display: flex;
+    margin-left: 30px;
+}
+.hd_left .select_wrap .apt{
+    display: inline-block;
+    width: 150px;height: 42px;
+    line-height: 40px;
+    text-align: center;
+    border: 2px solid #8b8075;
+    border-radius: 20px;
+    box-sizing: border-box;
+    font-weight: 500;
+    color: #fff;
+    margin-right: 10px;
+}
+.hd_left .select_wrap .apt:hover{
+    border: 2px solid rgba(255, 255, 255, 0.7);
+}
+.hd_left .select_wrap .like:hover{
+    background: transparent;
+}
+header .logo a{
+    display: block;
+    width: 145px;height: 23px;
+    background: url(../images/prugio_logo.png) no-repeat;
+}
+.hd_right{
+    font-size: 15px;
+    line-height: 42px;
+    font-weight: 500;
+    color: #fff;
+}
+.hd_right .num{
+    font-size: 18px;
+    padding-right: 75px;
+    color: #fff;
+    transition: font-size 0.5s;
+}
+.hd_right .num:hover{
+    font-size: 22px;
+    color: #8b8075;
+}
+header.on .logo{
+    visibility: hidden;
+}
+header.on .menu_btn{
+    visibility: hidden;
+}
+.menu_wrap{
+    position: fixed;
+    top: 0;left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #5a6770;
+    display: flex;
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+    overflow-y: auto;
+}
+.menu_wrap:after{
+    content: '';
+    position: fixed;
+    bottom: 0;left: 0;
+    width: 100%;
+    height: 10vh;
+    background: -moz-linear-gradient(top,  rgba(90,103,112,0) 0%, rgba(90,103,112,0.01) 1%, rgba(0,0,0,0.5) 100%);
+    background: -webkit-linear-gradient(top,  rgba(90,103,112,0) 0%,rgba(90,103,112,0.01) 1%,rgba(0,0,0,0.5) 100%);
+    background: linear-gradient(to bottom,  rgba(90,103,112,0) 0%,rgba(90,103,112,0.01) 1%,rgba(0,0,0,0.5) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005a6770', endColorstr='#80000000',GradientType=0 );            
+    pointer-events: none;
+}
+.menu_wrap.on{
+    visibility: visible;
+    opacity: 1;
+}
+header .close_btn{
+    width: 30px;height: 30px;
+    background: url(../images/gnb_menu_ico_close.png) no-repeat center/cover;
+    position: absolute;
+    top: 50%;left: 80px;
+    transform: translateY(-50%);
+    z-index: 100;
+    visibility: hidden;
+}
+header.on .close_btn{
+    visibility: visible;
+}
+header .menu{
+    width: 50%;
+}
+header .menu nav{
+    padding: 200px 80px 100px;
+}
+header .menu .gnb li a{
+    color: #fff;
+    font-size: 40px;
+    line-height: 58px;
+    font-weight: 500;
+}
+header .menu .list_wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 80px;
+}
+header .menu .list_wrap a{
+    color: #fff;
+    line-height: 26px;
+}
+header .menu .download{
+    display: flex;
+    align-items: flex-end;
+}
+header .menu .download .down{
+    display: flex;
+    align-items: center;
+}
+header .menu .download .down_btn{
+    width: 40px;height: 40px;
+    display: inline-block;
+    background: url(../images/Prugio_character.png) no-repeat 50%/cover;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin-right: 20px;
+}
+header .menu .download .lang{
+    margin-left: 80px;
+}
+.imglist_wrap{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+.imglist_wrap .imglist{
+    width: calc(50% - 10px);
+}
+
+.imglist_wrap .imglist li{
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.imglist img{
+    width: 100%;
+}
+
+
+/* footer */
+footer {
+    background: #5a6770;
+    position: relative;
+    z-index: 5;
+    top: 25vw;
+    padding: 4vw;
+}
+.footer_top{
+    height: 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: 1px solid #000;
+}
+.footer_top .info {
+    display: flex;
+    justify-content: space-between;
+}
+.footer_top .info .loca{
+    font-size: 1vw;
+    line-height: 1.5;
+}
+.footer_top .info .call{
+    font-size: 4vw;
+    transition: color 0.5s;
+}
+.footer_top .info .call:hover {
+    color: #fff;
+}
+.footer_top .info.area02{
+    padding-bottom: 4vw;
+}
+.footer_top .info .down {
+    display: flex;
+    align-items: center;
+    line-height: 1.5;
+}
+.footer_top .info .down_btn{
+    width: 2vw;height: 2vw;
+    display: inline-block;
+    background: url(../images/Prugio_character.png) no-repeat 50%/cover;
+    border-radius: 50%;
+    margin-right: 1vw;
+    transition: background 0.5s;
+}
+.footer_top .info .hotel_logo {
+    font-size: 3vw;
+}
+.footer_bottom {
+    height: 18vw;
+    padding-top: 1.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer_bottom .copy {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.footer_bottom .copy .noti{
+    position: absolute;
+    left: 25%;
+}
+.footer_bottom .copy .noti a::after{
+    content: '';
+    display: inline-block;
+    width: 1px;height: 10px;
+    background: #fff;
+    margin: 0 20px;
+}
+.footer_bottom .copy .noti a:last-child:after{
+    display: none;
+}
+.footer_bottom h2{
+    font-size: 12vw;
+    text-align: center;
+    letter-spacing: 0.2em;
+}
