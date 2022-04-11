@@ -91,13 +91,18 @@
     width: 100%;
 }
 .sc_site .site .imgwrap .view{
-    width: 449.1px;
+    width: 464px;
+    height: 304px;
+    position: absolute;
+    top: 12px;
+    left: 68px;
+    /* width: 449.1px;
     height: 337px;
     position: absolute;
     top: calc(50% + -121px);
     perspective-origin: center;
     left: calc(50% + 0px);
-    transform: translate(-50%,-50%) rotate(-21deg) perspective(101.6px) rotateY(-1deg);
+    transform: translate(-50%,-50%) rotate(-21deg) perspective(101.6px) rotateY(-1deg); */
     overflow-y: scroll;
 }
 .sc_site .site .imgwrap .view img{
@@ -109,7 +114,8 @@
 }
 .sc_site .site .txtwrap .num{
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 700;
+    color: #ddd;
     margin-bottom: 50px;
     display: block;
 }
@@ -127,6 +133,8 @@
 .sc_site .site .desc .time{
     display: block;
     font-size: 20px;
+    font-weight: 600;
+    color: #cdcdcd;
     padding-bottom: 20px;
 }
 .sc_site .site .desc span{
